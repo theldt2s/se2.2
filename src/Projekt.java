@@ -26,7 +26,7 @@ public class Projekt {
 			}	
 		}
 		if(a <=1){
-			test = true;
+			test = false;
 		}
 		
 		return test;
