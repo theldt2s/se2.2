@@ -7,7 +7,6 @@ class ProjectTester_2 {
 
 	
 	/**Bedingungen Nur bei Wiederspruch darf das Programm ablehnen
-	--> leere Übergabe kann Gültig sein
 	nicht definierte Variablen sind Gültig**/ 
 	
 	
@@ -18,7 +17,7 @@ class ProjectTester_2 {
 	
 	@Test
 	void plinear1() {
-		assertTrue(plinear.is_sorted(new String[]{}));
+		assertFalse(plinear.is_sorted(new String[]{}));
 	}
 	@Test
 	void plinear2() {
@@ -38,6 +37,11 @@ class ProjectTester_2 {
 	@Test
 	void plinear5() {
 		assertTrue(plinear.is_sorted(new String[]{"a","g"}));
+	}
+
+	@Test
+	void ptree1() {
+		assertFalse(ptree.is_sorted(new String[]{}));
 	}
 
 }
