@@ -1,4 +1,5 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -23,10 +24,13 @@ class ProjectTester_2 {
 	void plinear2() {
 		assertTrue(plinear.is_sorted(new String[]{"a","a"}));
 	}
+	
 	@Test
 	void plinear3() {
-		assertfalse(plinear.is_sorted(new String[]{"a","c","b","e"}));
+		assertFalse(plinear.is_sorted(new String[]{"a","c","b","e"}));
 	}
+	
+	
 	@Test
 	void plinear4() {
 		assertTrue(plinear.is_sorted(new String[]{"a","c","d","e"}));
